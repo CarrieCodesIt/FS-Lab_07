@@ -52,6 +52,7 @@ form.addEventListener('submit', (e) => {
 
     // RESET THE FORM
     form.reset()
+    document.getElementById('id').focus()
 
     // SET FOCUS BACK TO THE ID TEXT BOX
 
@@ -69,6 +70,7 @@ empData.addEventListener('click', (e) => {
             e.target.closest('tr').remove()
             empCount--
             empCount.textContent = newCount
+            document.getElementById('id').focus()
         }
     }
 })
